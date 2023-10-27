@@ -1504,20 +1504,66 @@ button:disabled,
 
 /* Contact Method */
 
-.contact-method {
-	margin: 0 0 2em 0;
-	padding-left: 3.25em;
+#contact>.inner {
+	-moz-transition: opacity 1.5s ease, -moz-transform 0.5s ease-out, -moz-filter 0.5s ease, -webkit-filter 0.5s ease;
+	-webkit-transition: opacity 1.5s ease, -webkit-transform 0.5s ease-out, -webkit-filter 0.5s ease, -webkit-filter 0.5s ease;
+	-ms-transition: opacity 1.5s ease, -ms-transform 0.5s ease-out, -ms-filter 0.5s ease, -webkit-filter 0.5s ease;
+	transition: opacity 1.5s ease, transform 0.5s ease-out, filter 0.5s ease, -webkit-filter 0.5s ease;
+	padding: 0 !important;
 	position: relative;
+	z-index: 2;
 }
 
-.contact-method .icon {
+#contact:after {
+	-moz-transition: opacity 2.5s ease;
+	-webkit-transition: opacity 2.5s ease;
+	-ms-transition: opacity 2.5s ease;
+	transition: opacity 2.5s ease;
+	-moz-transition-delay: 0.75s;
+	-webkit-transition-delay: 0.75s;
+	-ms-transition-delay: 0.75s;
+	transition-delay: 0.75s;
+	pointer-events: none;
+	content: '';
+	display: block;
+	height: 100%;
 	left: 0;
 	position: absolute;
 	top: 0;
+	width: 100%;
+	z-index: 1;
 }
 
-.contact-method h3 {
-	margin: 0 0 0.5em 0;
+body.is-preload #contact:after {
+	opacity: 1.0;
+}
+
+body.is-preload #contact>.inner {
+	-moz-filter: blur(0.125em);
+	-webkit-filter: blur(0.125em);
+	-ms-filter: blur(0.125em);
+	filter: blur(0.125em);
+	-moz-transform: translateX(-0.5em);
+	-webkit-transform: translateX(-0.5em);
+	-ms-transform: translateX(-0.5em);
+	transform: translateX(-0.5em);
+	opacity: 0;
+}
+
+body.is-preload #contact:after {
+	opacity: 1.0;
+}
+
+body.is-preload #contact>.inner {
+	-moz-filter: blur(0.125em);
+	-webkit-filter: blur(0.125em);
+	-ms-filter: blur(0.125em);
+	filter: blur(0.125em);
+	-moz-transform: translateX(-0.5em);
+	-webkit-transform: translateX(-0.5em);
+	-ms-transform: translateX(-0.5em);
+	transform: translateX(-0.5em);
+	opacity: 0;
 }
 
 /* Spotlights */
@@ -2607,6 +2653,68 @@ body.is-menu-visible #menu .inner {
 	margin-top: 25px;
 }
 
+#about>.inner {
+	-moz-transition: opacity 1.5s ease, -moz-transform 0.5s ease-out, -moz-filter 0.5s ease, -webkit-filter 0.5s ease;
+	-webkit-transition: opacity 1.5s ease, -webkit-transform 0.5s ease-out, -webkit-filter 0.5s ease, -webkit-filter 0.5s ease;
+	-ms-transition: opacity 1.5s ease, -ms-transform 0.5s ease-out, -ms-filter 0.5s ease, -webkit-filter 0.5s ease;
+	transition: opacity 1.5s ease, transform 0.5s ease-out, filter 0.5s ease, -webkit-filter 0.5s ease;
+	padding: 0 !important;
+	position: relative;
+	z-index: 2;
+}
+
+#about:after {
+	-moz-transition: opacity 2.5s ease;
+	-webkit-transition: opacity 2.5s ease;
+	-ms-transition: opacity 2.5s ease;
+	transition: opacity 2.5s ease;
+	-moz-transition-delay: 0.75s;
+	-webkit-transition-delay: 0.75s;
+	-ms-transition-delay: 0.75s;
+	transition-delay: 0.75s;
+	pointer-events: none;
+	content: '';
+	display: block;
+	height: 100%;
+	left: 0;
+	position: absolute;
+	top: 0;
+	width: 100%;
+	z-index: 1;
+}
+
+body.is-preload #about:after {
+	opacity: 1.0;
+}
+
+body.is-preload #about>.inner {
+	-moz-filter: blur(0.125em);
+	-webkit-filter: blur(0.125em);
+	-ms-filter: blur(0.125em);
+	filter: blur(0.125em);
+	-moz-transform: translateX(-0.5em);
+	-webkit-transform: translateX(-0.5em);
+	-ms-transform: translateX(-0.5em);
+	transform: translateX(-0.5em);
+	opacity: 0;
+}
+
+body.is-preload #about:after {
+	opacity: 1.0;
+}
+
+body.is-preload #about>.inner {
+	-moz-filter: blur(0.125em);
+	-webkit-filter: blur(0.125em);
+	-ms-filter: blur(0.125em);
+	filter: blur(0.125em);
+	-moz-transform: translateX(-0.5em);
+	-webkit-transform: translateX(-0.5em);
+	-ms-transform: translateX(-0.5em);
+	transform: translateX(-0.5em);
+	opacity: 0;
+}
+
 #about>.inner>p {
 	margin-top: 25px;
 }
@@ -2705,6 +2813,68 @@ ul.diamond-list a {
 
 
 /*Project*/
+
+#projects>.inner {
+	-moz-transition: opacity 1.5s ease, -moz-transform 0.5s ease-out, -moz-filter 0.5s ease, -webkit-filter 0.5s ease;
+	-webkit-transition: opacity 1.5s ease, -webkit-transform 0.5s ease-out, -webkit-filter 0.5s ease, -webkit-filter 0.5s ease;
+	-ms-transition: opacity 1.5s ease, -ms-transform 0.5s ease-out, -ms-filter 0.5s ease, -webkit-filter 0.5s ease;
+	transition: opacity 1.5s ease, transform 0.5s ease-out, filter 0.5s ease, -webkit-filter 0.5s ease;
+	padding: 0 !important;
+	position: relative;
+	z-index: 2;
+}
+
+#projects:after {
+	-moz-transition: opacity 2.5s ease;
+	-webkit-transition: opacity 2.5s ease;
+	-ms-transition: opacity 2.5s ease;
+	transition: opacity 2.5s ease;
+	-moz-transition-delay: 0.75s;
+	-webkit-transition-delay: 0.75s;
+	-ms-transition-delay: 0.75s;
+	transition-delay: 0.75s;
+	pointer-events: none;
+	content: '';
+	display: block;
+	height: 100%;
+	left: 0;
+	position: absolute;
+	top: 0;
+	width: 100%;
+	z-index: 1;
+}
+
+body.is-preload #projects:after {
+	opacity: 1.0;
+}
+
+body.is-preload #projects>.inner {
+	-moz-filter: blur(0.125em);
+	-webkit-filter: blur(0.125em);
+	-ms-filter: blur(0.125em);
+	filter: blur(0.125em);
+	-moz-transform: translateX(-0.5em);
+	-webkit-transform: translateX(-0.5em);
+	-ms-transform: translateX(-0.5em);
+	transform: translateX(-0.5em);
+	opacity: 0;
+}
+
+body.is-preload #projects:after {
+	opacity: 1.0;
+}
+
+body.is-preload #projects>.inner {
+	-moz-filter: blur(0.125em);
+	-webkit-filter: blur(0.125em);
+	-ms-filter: blur(0.125em);
+	filter: blur(0.125em);
+	-moz-transform: translateX(-0.5em);
+	-webkit-transform: translateX(-0.5em);
+	-ms-transform: translateX(-0.5em);
+	transform: translateX(-0.5em);
+	opacity: 0;
+}
 
 .project-container {
 	overflow: hidden;
